@@ -1,0 +1,15 @@
+echo '{
+  "version": 2,
+  "builds": [
+    {
+      "src": "efty.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "efty.py"
+    }
+  ]
+}' > vercel.json
